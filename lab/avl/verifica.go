@@ -53,11 +53,15 @@ func VerificaAVL(a *No) (bool, *No) {
 		return false, a
 	}
 
-	if ok, culpado := VerificaAVL(a.Esq); !ok {
+	ok, culpado := VerificaAVL(a.Esq);
+	
+	if (!ok) {
 		return false, culpado
 	}
 
-	if ok, culpado := VerificaAVL(a.Dir); !ok {
+	ok, culpado = VerificaAVL(a.Dir);
+
+	if (!ok) {
 		return false, culpado
 	}
 
