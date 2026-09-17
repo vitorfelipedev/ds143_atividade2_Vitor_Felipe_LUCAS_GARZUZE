@@ -1,9 +1,11 @@
 # Atividade Avaliativa 2 - Respostas
 
-Nome: LUCAS GARZUZE CORDEIRO
+Nomes:
+LUCAS GARZUZE CORDEIRO
 VITOR FELIPE LUCINDO DE ANDRADE
 
 GRR:
+GRR20250925
 GRR20252106
 
 Se a atividade foi feita em dupla, escreva aqui os dois nomes e os dois GRR. As
