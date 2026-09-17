@@ -40,11 +40,13 @@ ok      ds143/atividade2/avl    0.992s
    que satisfaz a primeira e falha na segunda, desenhando-a com o campo `Alt` de
    cada nó.
 
+```
          30 (Alt 2)
         /
       20 (Alt 1)
       /
     10 (Alt 0)
+```
 
 ## Uso de IA
 
