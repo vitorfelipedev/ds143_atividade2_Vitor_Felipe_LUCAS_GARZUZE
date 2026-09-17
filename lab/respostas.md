@@ -29,18 +29,17 @@ ok      ds143/atividade2/avl    0.992s
 
 2. Em uma frase, o que a sua `Sucessor` guarda durante a descida, e por que isso
    basta quando `v` não está na árvore.
-   - A função guarda o último nó visitado toda vez que a busca vira para a esquerda, o que é suficiente porque esse nó sempre será o menor valor maior que v já encontrado no caminho, independentemente do valor v existir ou não na árvore.
+   - A função realiza uma espécie de busca pelo valor v e guarda o último nó visitado (inicializado em nil) quando a busca for virar para a esquerda, dessa forma, esse nó representa o sucessor imediato na árvore do valor procurado, e quando v não está na árvore (não há sucessor), a busca só vai para a direita e o valor supracitado permanece nil.
 
 3. A `VerificaAVL` confere duas condições independentes. Dê um exemplo de árvore
    que satisfaz a primeira e falha na segunda, desenhando-a com o campo `Alt` de
    cada nó.
-   ```text
+
          30 (Alt 2)
         /
       20 (Alt 1)
       /
     10 (Alt 0)
-````
 
 ## Uso de IA
 
@@ -48,4 +47,4 @@ Diga se usou ferramentas de IA generativa nesta atividade e em que partes. Não
 influencia a nota.
 
 - Foram utilizadas discussões do Stack Overflow para auxiliar na resolução da primeira questão.
-- Foi utilizada IA para compreender o código da árvore AVL e realizar ajustes no código. O desenvolvimento foi feito de forma gradual, utilizando a IA para esclarecer dúvidas e auxiliar na implementação ao longo da atividade. Foi utilizado o Gemini Pro.
+- A dupla conclui que não conseguiria finalizar a parte 2 em tempo hábil e por esta razão utilizou IA para compreender o código da árvore AVL e realizar ajustes. O desenvolvimento foi feito de forma gradual, utilizando a IA para esclarecer dúvidas e auxiliar na implementação ao longo da atividade. Modelo utilizado: Gemini Pro.
