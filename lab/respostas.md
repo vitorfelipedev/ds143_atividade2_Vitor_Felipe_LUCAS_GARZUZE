@@ -13,6 +13,11 @@ duas pessoas enviam o mesmo `.zip` na UFPR Virtual.
 
 Ambiente (sistema operacional e versão do Go):
 
+OS: EndeavourOS x86_64
+Kernel: Linux 6.18.51-1-lts
+
+go version go1.27.1-X:nodwarf5 linux/amd64
+
 Saída de `go test ./...` na pasta que você vai enviar:
 
 ````
