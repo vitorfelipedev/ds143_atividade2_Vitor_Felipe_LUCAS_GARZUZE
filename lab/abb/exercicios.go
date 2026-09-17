@@ -59,12 +59,11 @@ func Sucessor(a *No, v int) (int, bool) {
 	var esq *No = nil
 
 	for a != nil {
-		if v < a.Info {
+		if a.Info > v {
 			esq = a
 			a = a.Esq
 		} else {
 			a = a.Dir
-
 		}
 	}
 
