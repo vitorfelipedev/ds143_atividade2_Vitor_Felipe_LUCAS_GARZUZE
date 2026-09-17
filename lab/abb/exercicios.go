@@ -31,11 +31,14 @@ func verify(a *No, min int, max int) bool {
 	if a == nil {
 		return true
 	}
+
 	if a.Info <= min || a.Info >= max {
 		return false
 	}
+	
 	esq := verify(a.Esq, min, a.Info)
 	dir := verify(a.Dir, a.Info, max)
+
 	return esq && dir
 }
 
@@ -54,6 +57,7 @@ func verify(a *No, min int, max int) bool {
 // O(h).
 func Sucessor(a *No, v int) (int, bool) {
 	var esq *No = nil
+
 	for a != nil {
 		if v < a.Info {
 			esq = a
@@ -63,9 +67,10 @@ func Sucessor(a *No, v int) (int, bool) {
 
 		}
 	}
+
 	if esq == nil {
 		return 0, false
-	} else {
-		return esq.Info, true
 	}
+
+	return esq.Info, true
 }
