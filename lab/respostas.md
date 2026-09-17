@@ -20,7 +20,7 @@ go version go1.27.1-X:nodwarf5 linux/amd64
 
 Saída de `go test ./...` na pasta que você vai enviar:
 
-````
+```
 $ go test ./...
 ok      ds143/atividade2/abb    0.990s
 ok      ds143/atividade2/avl    0.992s
